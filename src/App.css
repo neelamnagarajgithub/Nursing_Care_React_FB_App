@@ -10,6 +10,7 @@
 }
 *::selection {
   background: rgb(110, 237, 25);
+  /* background: red; */
   color: white;
 }
 
@@ -727,4 +728,125 @@ section {
   border: 1px solid #ccc;
   border-radius: 5px;
   text-align: center;
+}
+
+.dashboardcontainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(214, 236, 255, 0.509);
+}
+
+.dashleftcon {
+  width: 20vw;
+  height: 96vh;
+  border: none;
+  border-radius: 1vw;
+  background: white;
+  border: 5px solid rgba(51, 160, 255, 0.235);
+  text-align: center;
+  color: rgba(0, 0, 0, 0.495);
+}
+
+.dashrightcon {
+  width: 75vw;
+  height: 96vh;
+  border-radius: 1vw;
+  background: white;
+  border: 5px solid rgba(51, 160, 255, 0.235);
+  text-align: center;
+}
+
+.dashlogo {
+  color: black;
+  width: 100%;
+  height: 6%;
+}
+.dashmainmenu {
+  height: 50%;
+  width: 100%;
+  padding: 1vw;
+  border-radius: 20px;
+  text-align: left;
+}
+.dashmainmenu h4 {
+  color: black;
+}
+.dashulele h3 {
+  color: black;
+  width: 100%;
+  height: 10%;
+}
+.dashulele {
+  list-style: none;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dashulele ul,
+.dashaccount ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dashulele li,
+.dashaccount li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 15%;
+  cursor: pointer;
+  border-radius: 12px;
+  font-size: 20px;
+}
+.dashulele li:hover,
+.dashaccount li:hover {
+  background: rgb(12, 141, 255);
+  color: white;
+  #dashboard {
+    fill: white;
+  }
+}
+#dashboard {
+  height: 4vh;
+}
+.dashaccount {
+  width: 100%;
+  height: 35%;
+  padding: 1vw;
+  text-align: left;
+}
+.dashaccount li {
+  margin: 0.5vw;
+  padding: 0.5vw;
+}
+.dashaccount h4 {
+  color: black;
+}
+.dashuser {
+  width: 100%;
+  height: 9%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dashprofilephoto {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid rgba(51, 160, 255, 0.47);
 }

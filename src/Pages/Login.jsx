@@ -9,8 +9,17 @@ import "react-phone-input-2/lib/style.css";
 
 function Login() {
   const navigate = useNavigate();
-  const { number, setNumber, setShowOtp, showOtp, otp, setOtp, user, setUser } =
-    useContext(UserContext);
+  const {
+    number,
+    setNumber,
+    setShowOtp,
+    showOtp,
+    otp,
+    setOtp,
+    user,
+    setUser,
+    setIsLoggedin,
+  } = useContext(UserContext);
 
   const onSignup = async (e) => {
     e.preventDefault();
@@ -34,7 +43,8 @@ function Login() {
   const onVerify = async () => {
     try {
       const data = await user.confirm(otp);
-      console.log(data);
+      setIsLoggedin(true);
+      setUser(data);
       navigate("/user/dashboard");
     } catch (error) {
       console.log(error);

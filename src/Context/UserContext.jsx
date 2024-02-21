@@ -7,6 +7,7 @@ function UserProvider({ children }) {
   const [user, setUser] = useState(null);
   const [number, setNumber] = useState("");
   const [showOtp, setShowOtp] = useState(false);
+  const [isLoggedin, setIsLoggedin] = useState(false);
   return (
     <UserContext.Provider
       value={{
@@ -18,6 +19,8 @@ function UserProvider({ children }) {
         setOtp,
         user,
         setUser,
+        isLoggedin,
+        setIsLoggedin,
       }}
     >
       {children}
